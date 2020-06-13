@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #ffcbcb;
+    --light-primary-color: #ffb5b5;
+    --secondary-color: #407088;
+    --tertiary-color: #132743;
+}
+
+header {
+    background-color: var(--light-primary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    padding-left: .5em;   
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    font-size:26px;
+    padding: 15px;
+    color: ;
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+.hero {
+    background-image: url(/assets/images/storm-trooper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 20%;
+    height: 500px;
+    width: 100%;
+}
