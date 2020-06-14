@@ -83,6 +83,12 @@ nav a {
     color: var(--tertiary-color);
 }
 
+.main img {
+    height: auto;
+    width: 20%;
+    border-radius: 50%;
+}
+
 .main span {
     font-size: 20px;
 }
@@ -98,6 +104,9 @@ nav a {
     width: 10%;
     text-align: right; 
     height: auto;
+    border-right: double var(--primary-color);
+    padding: 20px;
+    display: block;
 }
 
 .info {
@@ -107,7 +116,10 @@ nav a {
     text-align: left;
     list-style: none;
     padding: 30px;
-    border-left: double var(--primary-color);
+}
+
+.about {
+    width: 60%;
 }
 
 .grid-wrapper {
@@ -121,7 +133,6 @@ nav a {
     grid-gap: 15px;
     width: 80%;
     padding: 30px;
-    border-left: double var(--primary-color);
 }
 
 .project {
