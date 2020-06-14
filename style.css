@@ -77,15 +77,19 @@ nav a {
     background-color: var(--dark-color);
     padding: 25px;
     color: var(--light-primary-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .main h2 {
     color: var(--tertiary-color);
+    text-decoration: underline double var(--secondary-color);
+
 }
 
 .main img {
-    height: auto;
-    width: 20%;
+    height: 350px;
+    width: auto;
     border-radius: 50%;
 }
 
@@ -94,32 +98,34 @@ nav a {
 }
 
 .content {
-    padding: 50px;
+    padding: 30px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .content h2 {
     font-size: 60px;
-    width: 10%;
     text-align: right; 
     height: auto;
-    border-right: double var(--primary-color);
-    padding: 20px;
-    display: block;
+    width: 300px;
+    
+    padding-right: 20px;
 }
 
 .info {
-    width: 80%;
     height: auto;
     font-size: 25px;
-    text-align: left;
     list-style: none;
     padding: 30px;
+    
 }
 
 .about {
-    width: 60%;
+    flex: 3;
+    text-align: left;
 }
 
 .grid-wrapper {
@@ -128,10 +134,10 @@ nav a {
 
 .work-grid{
     display: grid;
+    width: 70%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 15px;
-    width: 80%;
     padding: 30px;
 }
 
@@ -144,11 +150,12 @@ nav a {
     text-decoration: none;
     color: var(--light-primary-color);
     opacity: 50%;
+    transition: .7s;
 }
 
 .project:hover {
     opacity: 100%;
-    font-size: 30px;
+
 }
 
 .run-buddy {
@@ -187,4 +194,14 @@ nav a {
     background-image: url(assets/images/phone-img.jpg);
     background-size: cover;
     grid-column: 2 / span 1;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact li {
+    padding: inherit;
 }
