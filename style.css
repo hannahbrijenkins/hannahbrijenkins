@@ -131,10 +131,7 @@ nav a {
     padding: 25px 15px;
     font-size: 20px;
     border: solid var(--light-primary-color) 7px;
-}
-
-.project span {
-
+    
 }
 
 .project:hover {
