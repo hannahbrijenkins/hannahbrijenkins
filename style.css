@@ -217,7 +217,6 @@ nav li:hover:after {
     text-decoration: none;
     color: var(--light-primary-color);
 }
-
 .contact li a:visited {
     color: var(--primary-color);
 }
