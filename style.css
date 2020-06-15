@@ -129,7 +129,6 @@ nav li:hover:after {
 .about-info span {
     font-size: 25px;
 }
-
 .about-me {
     display: flex;
     flex-direction: row;
@@ -164,6 +163,17 @@ nav li:hover:after {
 .project:hover {
     opacity: 100%;
 }
+.project:not(:first-child):hover {
+    filter: saturate(0%);
+}
+.project:not(:first-child):hover::after {
+    content: "Coming Soon";
+    color: red;
+    font-style: italic;
+    font-weight: 250px;
+    font-family: 'Rubik Mono One', sans-serif;
+    transition: 2s;
+}
 .run-buddy {
     background-image: url(assets/images/run-buddy.jpg);
     background-size: cover;
@@ -196,11 +206,12 @@ nav li:hover:after {
     background-size: cover;
     grid-column: 2 / span 1;
 }
-/*contact form start*/
+/*contact start*/
 .contact-info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 .contact-info ul {
     display: flex;
@@ -247,13 +258,20 @@ nav li:hover:after {
             background-position: 20%;
         }
     }
-    @media screen and (max-width: 840px) {
+    @media screen and (max-width: 800px) {
         .work-grid {
+            display: block;
             height: auto;
             width: 100%;
         }
         .flex-row img{
             height: auto;
             width: 100%;
+        }
+        .main h2 {
+            font-size: 45px;
+        }
+        .email {
+            font-size: inherit;
         }
     }
