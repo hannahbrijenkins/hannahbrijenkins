@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /*color scheme*/
 :root {
@@ -112,8 +113,8 @@ nav li:hover:after {
 }
 /*about-section starts*/
 .flex-row img {
-    max-height: 400px;
-    width: auto;
+    max-height: auto;
+    width: 100%;
     margin: 25px;
     border-radius: 50%;
     flex: 1;
@@ -147,7 +148,7 @@ nav li:hover:after {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 20px;
-    gr
+
 }
 .project {
     display: flex;
@@ -223,3 +224,36 @@ nav li:hover:after {
 .contact li a:hover{
     color: var(--tertiary-color);
 }
+
+/*Media queries for different screen sizes*/
+    @media screen and (max-width: 980px) {
+        header {
+            height: auto;
+            flex-direction: row; 
+            flex-wrap: nowrap;
+        }
+        header h1 {
+            font-size: 35px;
+            width: 100%;
+            padding: auto;
+            margin: auto;
+            justify-content: center;
+        }
+        header nav {
+            width: 100%;
+            justify-content: center;
+        }
+        .hero {
+            background-position: 20%;
+        }
+    }
+    @media screen and (max-width: 840px) {
+        .work-grid {
+            height: auto;
+            width: 100%;
+        }
+        .flex-row img{
+            height: auto;
+            width: 100%;
+        }
+    }
