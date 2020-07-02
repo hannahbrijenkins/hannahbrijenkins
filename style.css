@@ -14,6 +14,10 @@
 body {
     font-family: 'Actor', sans-serif;
 }
+/* Hide element */
+.hide {
+    display: none;
+}
 /*header styling starts*/
 header {
     background-color: var(--dark-color);
