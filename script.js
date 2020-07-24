@@ -15,5 +15,10 @@ function mediaQ () {
         menu.classList.add("hide");
     }
 };
-
+//BUG HERE, stopped
+//click menu transformation
+function menuIcon(x) {
+    x.classList.toggle.("change");
+}
+//call display none function
 mediaQ();
