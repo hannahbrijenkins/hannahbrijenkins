@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 /*color scheme*/
 :root {
-    --primary-color: #41EAD4;
-    --light-primary-color: #FDFFFC;
-    --tertiary-color: #FF9F1C;
-    --dark-color: #011627;
+    --primary-color: #5c5353;
+    --light-primary-color: #f5f5f5;
+    --tertiary-color: #4a5c4f;
+    --dark-color: #1e1e1e;
 }
 /*universal styling*/
 body {
@@ -37,22 +38,11 @@ body {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 /*header styling starts*/
-header {
-    background-color: var(--dark-color);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 125px;
+header{
+    background-color: transparent;
 }
-header h1 {
-    font-family: 'Rubik Mono One', sans-serif;
-    font-size: 55px;
-    padding-left: 40px;   
-    color: var(--tertiary-color);
-    text-shadow: 3px 3px 8px black;
+#hamburger {
+    align-self: flex-end;
 }
 nav ul{
     display: flex;
@@ -86,28 +76,29 @@ nav li:hover:after {
 }
 /*hero styling starts*/
 .hero {
-    background-image: url(assets/images/storm-trooper.jpg);
+    background-image: url(assets/images/texture.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 20%;
-    height: 500px;
+    height: 800px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
 }
-.hero h2 {
-    margin-left: 15%;
-    font-size: 40px;
+.hero h1 {
+    font-family: 'Vidaloka', serif;
     color: var(--dark-color);
-    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 120px;
+    letter-spacing: 15px;
+    word-spacing: 35px;
 }
 /*main div starts*/
 .main {
-    background-color: var(--dark-color);
+    background-color: var(--light-primary-color);
     padding: 35px;
-    color: var(--light-primary-color);
+    color: var(--dark-color);
     display: flex;
     flex-direction: column;
 }
@@ -116,16 +107,15 @@ nav li:hover:after {
     height: auto;
     width: auto;
     padding-right: 20px;
+    
 }
 .main h2{
-    color: var(--light-primary-color);
-    border: solid 5px var(--primary-color);
-    background-color: var(--tertiary-color);
+    color: var(--dark-color);
     width: 100%;
     text-align: center;
-    border-radius: 50px;
-    text-shadow: 3px 3px 8px #011627;
-    font-family: 'Rubik Mono One' , sans-serif;
+    font-family: 'Spartan', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .flex-row {
     display: flex;
@@ -144,6 +134,7 @@ nav li:hover:after {
 .about-info {
     height: auto;
     font-size: 35px;
+    margin: 50px;
     padding: 30px;
     text-align: center;
     flex: 3;
